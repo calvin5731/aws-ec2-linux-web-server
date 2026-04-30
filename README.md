@@ -1,73 +1,79 @@
-# AWS EC2 Linux Web Server Deployment
+# 🚀 AWS EC2 Linux Web Server Deployment
 
-## Project Overview
+## 📸 Final Result
 
-This project demonstrates how I deployed a Linux web server on Amazon Web Services using an EC2 instance. I launched a t3.micro Linux instance, configured key pair access, adjusted the security group, connected to the instance, installed Apache, and verified the web server from a browser using the public IP address.
+![Live Website](screenshots/screenshots:19-live-website-browser.png)
 
-This project helped me practice basic cloud engineering skills such as EC2 deployment, SSH access, Linux commands, web server installation, and cloud security group configuration.
+> Deployed a Linux-based web server on AWS EC2 and made it accessible through a public IP address.
 
-## Tools and Services Used
+---
 
-- Amazon Web Services
-- EC2
-- Amazon Linux
-- t3.micro instance
+## 💡 Project Overview
+
+This project demonstrates how I deployed a cloud-hosted Linux server using AWS EC2, configured secure access, installed Apache, and hosted a live webpage.
+
+---
+
+## 🛠️ Technologies Used
+
+- AWS EC2
+- Amazon Linux 2023
+- t3.micro
 - SSH
-- Key pair authentication
+- Key Pair Authentication
 - Security Groups
 - Apache HTTP Server
-- GitHub
+- Linux CLI
 
-## Skills Demonstrated
+---
 
-- Creating and launching an EC2 instance
-- Selecting an Amazon Linux image
-- Choosing a t3.micro instance type
-- Creating or using an existing key pair
-- Configuring inbound security group rules
-- Connecting to Linux through SSH
-- Installing and starting Apache
-- Testing a web server through a browser
-- Documenting a cloud project for a technical portfolio
+## ⚙️ Deployment Walkthrough
 
-## Project Steps
+### Step 1: EC2 Dashboard
+![EC2 Dashboard](screenshots/screenshots:01-ec2-dashboard.png)
 
-### 1. Launched an EC2 Instance
+### Step 2: Launch Instance
+![Launch Instance](screenshots/screenshots:02-launch-instance-name.png)
 
-I started by creating a new EC2 instance in AWS. I selected a Linux image and used the t3.micro instance type because it is a lightweight option that works well for basic cloud practice.
+### Step 3: Key Pair Section
+![Key Pair Section](screenshots/screenshots:03-key-pair-section-main-screen.png)
 
-![EC2 Launch](screenshots/screenshots:02-launch-instance-name.png)
+### Step 4: Create Key Pair
+![Key Pair Creation](screenshots/screenshots:04-key-pair-creation-popup.png)
 
-### 2. Selected or Created a Key Pair
+### Step 5: Select Amazon Linux
+![Amazon Linux](screenshots/screenshots:05-amazon-linux-selected.png)
 
-I used a key pair to securely connect to the EC2 instance through SSH. This is important because AWS uses key based authentication instead of a regular username and password.
+### Step 6: Choose Instance Type
+![Instance Type](screenshots/screenshots:06-instance-type-selected.png)
 
-![Key Pair](screenshots/screenshots:03-key-pair-section-main-screen.png)
+### Step 7: Select Key Pair
+![Key Pair Selected](screenshots/screenshots:07-key-pair-section.png)
 
-### 3. Configured Security Group Rules
-
-I configured the security group so the instance could allow SSH traffic for remote access and HTTP traffic so the web page could be viewed in a browser.
-
+### Step 8: Configure Security Group
 ![Security Group](screenshots/screenshots:08-network-security-settings.png)
 
-### 4. Launched the Instance
-
-After reviewing the instance settings, I launched the EC2 instance successfully.
-
+### Step 9: Launch Instance
 ![Launch Success](screenshots/screenshots:09-instance-launch-success.png)
 
-### 5. Connected to the Linux Instance
+### Step 10: Instances List
+![Instances List](screenshots/screenshots:10-instances-list.png)
 
-Once the instance was running, I connected to it using SSH. This allowed me to manage the Linux server from the command line.
+### Step 11: Public IP
+![Public IP](screenshots/screenshots:11-instance-running-public-ip.png)
 
-![SSH Connection](screenshots/screenshots:13-terminal-connected.png)
+### Step 12: EC2 Connect
+![EC2 Connect](screenshots/screenshots:12-ec2-connect-page.png)
 
-### 6. Installed Apache Web Server
+### Step 13: Terminal Access
+![Terminal](screenshots/screenshots:13-terminal-connected.png)
 
-After connecting to the instance, I installed Apache so the EC2 instance could serve a basic webpage.
+---
+
+## 🐧 Linux Setup
+
+### Step 14: Update System
+![System Update](screenshots/screenshots:14-linux-system-update.png)
 
 ```bash
 sudo yum update -y
-sudo yum install httpd -y
-sudo systemctl start httpd
-sudo systemctl enable httpd
