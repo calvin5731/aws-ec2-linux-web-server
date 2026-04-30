@@ -42,7 +42,7 @@ I started by creating a new EC2 instance in AWS. I selected a Linux image and us
 
 I used a key pair to securely connect to the EC2 instance through SSH. This is important because AWS uses key based authentication instead of a regular username and password.
 
-![Key Pair](screenshots/05-key-pair-section.png)
+![Key Pair](screenshots/screenshots:05-amazon-linux-selected.png)
 
 ### 3. Configured Security Group Rules
 
