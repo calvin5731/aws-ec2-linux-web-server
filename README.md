@@ -36,7 +36,7 @@ This project helped me practice basic cloud engineering skills such as EC2 deplo
 
 I started by creating a new EC2 instance in AWS. I selected a Linux image and used the t3.micro instance type because it is a lightweight option that works well for basic cloud practice.
 
-![EC2 Launch](screenshots/02-ec2-launch-instance.png)
+![EC2 Launch](screenshots/screenshots:02-launch-instance-name.png)
 
 ### 2. Selected or Created a Key Pair
 
