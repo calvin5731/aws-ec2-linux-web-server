@@ -42,25 +42,25 @@ I started by creating a new EC2 instance in AWS. I selected a Linux image and us
 
 I used a key pair to securely connect to the EC2 instance through SSH. This is important because AWS uses key based authentication instead of a regular username and password.
 
-![Key Pair](screenshots/screenshots:05-amazon-linux-selected.png)
+![Key Pair](screenshots/screenshots:03-key-pair-section-main-screen.png)
 
 ### 3. Configured Security Group Rules
 
 I configured the security group so the instance could allow SSH traffic for remote access and HTTP traffic so the web page could be viewed in a browser.
 
-![Security Group](screenshots/06-security-group-settings.png)
+![Security Group](screenshots/screenshots:08-network-security-settings.png)
 
 ### 4. Launched the Instance
 
 After reviewing the instance settings, I launched the EC2 instance successfully.
 
-![Launch Success](screenshots/09-launch-success.png)
+![Launch Success](screenshots/screenshots:09-instance-launch-success.png)
 
 ### 5. Connected to the Linux Instance
 
 Once the instance was running, I connected to it using SSH. This allowed me to manage the Linux server from the command line.
 
-![SSH Connection](screenshots/11-linux-terminal-connected.png)
+![SSH Connection](screenshots/screenshots:13-terminal-connected.png)
 
 ### 6. Installed Apache Web Server
 
